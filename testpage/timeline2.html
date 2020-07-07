@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.education h3 {
+  font-size: 32px;
+  font-weight: 500;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+.education h3 small{
+  color: #A00404;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.education-list{
+  padding-left: 25px;
+}
+
+.education-list li{
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+
+.education-list li::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #96A9C4;
+}
+
+.education-list li:last-child::before{
+  height: 0;
+}
+
+.education-list li::after{
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #96A9C4;
+}
+
+.education-list li:first-child::after{
+  height: 0;
+}
+
+.education-list li p{
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.education-list li p::before{
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 40%;
+  left: -8px;
+  border-radius: 50%;
+  background: #96A9C4;
+}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="education container">
+          <h3>學歷 <small>EDUCATION</small></h3>
+          <ul class="education-list">
+            <li>
+              <p>國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</p>
+            </li>
+            <li>
+              <p>國立六腳高級中學 美術班 | 2013－2016</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+</body>
+</html>

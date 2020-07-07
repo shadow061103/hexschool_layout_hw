@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+.fc-w
+{
+    color: #fff;
+    background-color: #000;
+}
+.fc-b
+{
+    color: #000;
+    background-color: #fff;
+}
+.mb-32
+{
+   margin-bottom: 32px;
+}
+p
+{
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: bold;
+    line-height: 42px;
+    
+}
+.flex-center
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------*/
+.intro
+{
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 960px;
+}
+.intro-content
+{
+    padding-top: 356px;
+}
+
+.intro h1
+{
+    font-family: Roboto;
+    font-size: 80px;
+    line-height: 94px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.media{
+
+display: flex;
+}
+.media a
+{
+    margin-right: 16px;
+}
+/*----------*/
+.about{
+    padding-top: 64px;
+   
+}
+.about h1{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.edu{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.exp{
+    padding-top: 30px;
+    border-top: 1px solid #000;
+    width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exp p{
+    position: relative;
+    margin-bottom: 32px;
+    
+}
+.exp li p::before
+{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: #891818;
+    top:8px;
+    left: -30px;
+}
+/*----------*/
+.brand
+{
+    padding-top: 64px;
+
+}
+.brand h1{
+font-size: 64px;
+line-height: 75px;
+font-weight: bold;
+margin-bottom: 16px;
+}
+.brand p span{
+    font-size: 20px;
+    line-height: 42px;
+    display: block;
+    text-align: center;
+}
+.brang-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 65%;
+}
+.brang-img li{
+    margin-bottom: 40px;
+}
+/*----------*/
+.work{
+    background-image: url(img/photo-1561291386-5be50364cfb5.png);
+    background-repeat: no-repeat;
+    padding-top: 64px;
+    background-position: center bottom;
+    padding-bottom: 162px;
+}
+.work h1{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 75px;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+.work ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 65%;
+}
+.work li p{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 56px;
+}
+/*----------*/
+.contact
+{
+    padding-top: 64px;
+    padding-bottom: 80px;
+}
+.contact h1{
+    font-size: 64px;
+    line-height: 75px;
+}

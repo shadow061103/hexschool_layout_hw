@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "微軟正黑體";
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: #96A9C4;
+  top: 22px;
+  bottom:22px;
+  left: 29.5px;
+  z-index:2;
+}
+
+/* Container around content */
+.container {
+  position: relative;
+  left: 30px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  background-color: #96A9C4;
+  top: 14px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.content {
+  padding: 10px 20px;
+  font-size:24px;
+}
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="container">
+          <div class="content">
+            國立六角師範大學 視覺設計學系 學士學位 | 2016－2020
+          </div>
+        </div>
+        <div class="container ">
+          <div class="content">  
+            國立六腳高級中學 美術班 | 2013－2016
+          </div>
+        </div>
+        <div class="container ">
+            <div class="content">  
+              國立六腳高級中學 美術班 | 2013－2016
+            </div>
+          </div>
+      </div>
+</body>
+</html>
