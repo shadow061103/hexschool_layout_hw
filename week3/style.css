@@ -21,6 +21,16 @@ img{
     background-size: cover;
     background-position: center center;
 }
+.title
+{
+text-align:center;
+font-size: 48px;
+line-height: 1.5;
+font-weight: bold;
+color: #fff;
+padding-top: 64px;
+padding-bottom: 60px;
+}
 .text-primary
 {
     color: #650300;
@@ -47,6 +57,7 @@ img{
 {
     align-items: flex-end;
 }
+
 /*nav*/
 nav{
     padding-left: 88px;
@@ -64,12 +75,6 @@ nav ul{
 }
 nav li {
     margin-left: 64px;
-}
-.title
-{
-    font-weight: bold;
-    font-size: 48px;
-    margin: 0 auto;
 }
 /*header*/
 .banner
@@ -165,16 +170,10 @@ nav li {
 .design
 {
     background-image: url(img/bg.png);
+    padding-bottom: 450px;
 
 }
-.design h1
-{
-text-align:center;
-font-size: 48px;
-line-height: 1.5;
-font-weight: bold;
-color: #fff;
-}
+
 .design li
 {
     margin-bottom: 60px;
@@ -183,8 +182,11 @@ color: #fff;
 {
     max-width: 80%;
     display: flex;
-    flex-direction: column;
     margin: 0 auto;
+}
+.design-list
+{
+    flex-direction: column;
 }
 .design span
 {
@@ -249,3 +251,92 @@ color: #fff;
     width: 100%;
     text-align: center;
 }
+.recommend
+{
+    margin-top: -390px;
+    margin-bottom: 80px;
+}
+.recommend ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+   }
+   .recommend li
+   {
+   width: 15%;
+   margin-right: 24px;
+   background-color: #fff;
+   border:1px solid #808a94;
+  
+   }
+   .rec-content
+   {
+       padding-left: 16px;
+       padding-right: 16px;
+   }
+   .rec-content p
+   {
+    font-size: 16px;
+    margin-bottom: 16px;
+   }
+   .rec-content p:first-child
+   {
+   font-weight: bold;
+   }
+   .rec-content p:last-child
+   {
+   color: #707070;
+   }
+
+   /*-----contact-----*/
+.contact
+{
+    background-color: #AA06010D;
+}
+.contact-container
+{
+    max-width: 40%;
+    margin: 0 auto;
+}
+.contact h1
+{
+    color: black;
+    padding-bottom: 24px;
+}
+.contact h2
+{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.contact li
+{
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.contact input,textarea
+{
+    display: block;
+    border: 1px solid #000;
+    background-color: transparent;
+    width: 100%;
+}
+.contact p
+{
+
+}
+.contact button{
+    background-color: #AA0601;
+    color: #fff;
+    width: 180px;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    padding: 1rem;
+    font-size: 16px;
+
+
+}
+
+
