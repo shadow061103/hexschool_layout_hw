@@ -293,6 +293,7 @@ nav li {
 .contact
 {
     background-color: #AA06010D;
+    padding-bottom: 92px;
 }
 .contact-container
 {
@@ -321,9 +322,11 @@ nav li {
     border: 1px solid #000;
     background-color: transparent;
     width: 100%;
+    padding:1rem;
 }
 .contact p
 {
+    margin-bottom: 4px;
 
 }
 .contact button{
@@ -335,8 +338,51 @@ nav li {
     display: block;
     padding: 1rem;
     font-size: 16px;
-
-
+    border: none;
+}
+.contact input[type="checkbox"]
+{
+ display: inline;
+ width: auto;   
 }
 
+/*----footer----*/
+footer
+{
+    padding: 40px;
+}
+footer p,span,img
+{
+    display: inline;
+}
+.footer-container
+{
+    max-width: 60%;
+    margin: 0 auto;
+}
+.footer-nav
+{
+    border-bottom: 1px solid #fff;
+}
+.footer-container img
+{
+    display: inline;
+}
+.footer-nav li
+{
+ margin-bottom: 16px;   
 
+}
+.footer-top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top span,img
+{
+    margin-right: 32px;
+}
+.footer-nav p
+{
+    font-size: 36px;
+}
