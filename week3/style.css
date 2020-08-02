@@ -24,7 +24,7 @@
     display: none;
 }
 
-@media(max-width:992px)
+@media (max-width:992px)
 {
     .nav{
         position: relative;
@@ -67,9 +67,6 @@
     .ham-icon{
         display: block;
     }
-
-
-
 }
 
 /*header*/
@@ -77,59 +74,113 @@
 {
     background-image: url(img/banner.png);
     height: 840px;
-    line-height: 1.5;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
-.banner-container
+.banner-content
 {
-    max-width: 1200px;
-    margin-right: 360px;
+    height: 100%;
+    font-weight: bold;
+    justify-content: center;
+    align-items: flex-end;
+    
 }
-.banner h2{
-    font-size: 36px;
+.banner p{
+    font-size: 2.25rem;
 }
 .banner h1{
-    font-size: 64px;
+    font-size: 4rem;
 }
+@media (max-width:992px)
+{
+    .banner p{
+        font-size: 1.25rem;
+    }
+
+    .banner h1{
+        font-size: 3rem;
+    }
+    
+    .banner
+    {
+        background-image: url(img/banner-sm.png);
+    }
+}
+@media (max-width:414px)
+{
+    .banner p{
+        font-size: 1rem;
+    }
+    .banner h1{
+        font-size: 2rem;
+    }
+    .banner
+    {
+        height: 394px;
+    }
+}
+/*about*/
 .about
 {
     background-color: #AA06010D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 64px;
-
 }
 
 .about ul
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding:64px 397px
-
+ justify-content: space-between;
+ padding-bottom: 5rem;
+/*這樣最後一張圖片才會往下掉*/
+align-items: baseline; 
 }
 .about li{
-    max-width: 20%;
+    width: 20%;
 }
 .about li h1{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 4px;
     text-align: center;
-    margin-top: 40px;
+    
+}
+.about img:last-child
+{
+    height:93.98px
 }
 .about p{
     color: #000;
-    font-size: 16px;
 }
 .about img{
-   
     margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+@media(max-width:992px)
+{
+    .about ul
+    {
+        flex-wrap: wrap;
+    }
+    .about li{
+        width: 48%;
+    }
+    .about p{
+        margin-bottom: 2.5rem;
+    }
+    .about h1:first-child
+    {
+       margin-top: 1rem;
+       margin-bottom: 8px;
+    }
+    .about h1:first-child
+    {
+        font-size: 2rem;
+    }
+
+
+}
+@media (max-width:414px)
+{
+    .about li{
+        width: 100%;
+    }
 }
 /*Classic*/
 .classic
