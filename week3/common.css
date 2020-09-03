@@ -28,8 +28,8 @@ text-align:center;
 font-size: 3rem;
 font-weight: bold;
 color: #fff;
-padding: 4rem 0px;
-
+padding-top: 4rem;
+padding-bottom: 4rem;
 }
 .text-primary
 {
@@ -65,4 +65,13 @@ padding: 4rem 0px;
 {
     max-width: 1200px;
     margin: 0 auto;
+}
+@media(max-width:992px)
+{
+    .title
+    {
+    font-size: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    }
 }
