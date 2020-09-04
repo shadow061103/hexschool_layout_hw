@@ -1,0 +1,162 @@
+//variable 可以存list 用空白或逗號
+$bgcolor:red;
+$fontstyle:Helvetica, Arial, sans-serif;
+span
+{
+    background: $bgcolor;
+    font-style: $fontstyle;
+}
+
+//Nest
+.recommend
+{
+    color: blue;
+    .top{
+        border: 1px solid #000;
+    }
+}
+//Nest property
+.parent
+{
+    font:
+    {
+        family:Roboto, sans-serif;
+        size: 12px;
+    }
+}
+
+//Mixins 降低元素撰寫重複性 &代表父元素
+.notecard{ 
+    &:hover{
+        background: $bgcolor;
+      }
+    }
+
+//重用群組的css
+@mixin backface-visibility 
+{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+@mixin imgdisable($visibility:hidden) //有參數
+{
+    visibility: hidden;
+}
+
+.notecard 
+{
+    .front, .back 
+    {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      @include backface_visibility;
+    }
+}
+.end
+{
+    @include imgdisable(hidden);
+    color: red;
+}
+
+//參數傳入當字串 用#{$file} 接收
+@mixin photo-content($file) {
+    content: url(#{$file}.jpg); //string interpolation
+    object-fit: cover;
+    }
+    
+.photo { 
+    @include photo-content('titanosaur');
+    width: 60%;
+    margin: 0px auto; 
+}
+
+//搭配Nest使用
+@mixin hover-color($color)
+{
+    &:hover
+    {
+        color:$color;
+    }
+}
+
+.word{
+    @include hover-color(red);
+}
+
+//function
+$lighten:fade-out(#fff,0.5);
+
+//each 迭代元素
+$list: (orange, purple, teal);
+
+@each $item in $list 
+{
+.#{$item} 
+    {
+  background: $item;
+    }
+}
+
+//include外部檔案
+@import "variable";
+.variable
+{
+    color:$localpara;
+}
+
+
+//extend共用
+.lemonade 
+{
+    border: 1px yellow;
+    background-color: #fdd;
+}
+.strawberry 
+{
+    @extend .lemonade;
+    border-color: pink;
+}
+
+//搭配placeholder
+a%drink 
+{
+    font-size: 2em;
+    background-color: $localpara;
+}
+    
+.lemonade 
+{
+    @extend %drink;
+}
+
+
+//minin跟extend比較
+@mixin no-variable {
+    font-size: 12px;
+    color: #FFF;
+    opacity: .9;
+    }
+    
+    %placeholder {
+    font-size: 12px;
+    color: #FFF;
+    opacity: .9;
+    }
+    
+    span {
+    @extend %placeholder;
+    }
+    
+    div {
+    @extend %placeholder;
+    }
+    
+    p {
+    @include no-variable;
+    }
+    
+    h1 {
+    @include no-variable;
+    }
