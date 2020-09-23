@@ -1,0 +1,49 @@
+header {
+  background-color: #EDF4EE;
+  min-width: 296px;
+  min-height: 100vh;
+  padding-left: 2rem;
+  color: #121212;
+  font-weight: bold;
+}
+
+.nav img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline;
+  margin-right: 1rem;
+}
+
+.nav li {
+  margin-bottom: 1.8rem;
+}
+
+.active {
+  color: #2A8356;
+  position: relative;
+}
+
+.active::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: #2A8356;
+  position: absolute;
+  left: -32px;
+}
+
+.user {
+  margin-bottom: 2rem;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.user .mail {
+  color: gray;
+}
+/*# sourceMappingURL=header.css.map */
