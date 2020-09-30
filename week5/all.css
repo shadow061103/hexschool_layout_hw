@@ -69,8 +69,16 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 .mt-25 {
   margin-top: 2.5rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
 }
 
 .position-rel {
@@ -97,6 +105,18 @@ img {
   padding: 2rem 2rem;
 }
 
+.fw-b {
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+}
+
+.title {
+  height: 3.875rem;
+}
+
 /*----------admin---------------*/
 .admin {
   margin-bottom: 2rem;
@@ -106,6 +126,10 @@ img {
 .admin h1 {
   font-size: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.admin .material-icons {
+  margin-left: 1.5rem;
 }
 
 /*----------list---------------*/
@@ -149,5 +173,120 @@ img {
 .page-active {
   color: #fff;
   background-color: #2A8356;
+}
+
+/*----------assignment---------------*/
+.assignment {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.assignment h1 {
+  font-size: 1.5rem;
+  margin-right: 2.875rem;
+}
+
+.assignment .material-icons {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.assignment .material-icons:last-child {
+  margin-left: 1.625rem;
+}
+
+/*------------all-------------*/
+.bgfocus {
+  background-color: #EDF4EE;
+}
+
+.all {
+  width: 30%;
+}
+
+.all li {
+  border: 1px solid #CDDDCD;
+  padding: 0.75rem 0.75rem;
+}
+
+.mark {
+  color: #0000009A;
+}
+
+/*-----------------message----------*/
+.message {
+  width: 70%;
+  margin-left: 1rem;
+}
+
+.message .comment {
+  display: block;
+  text-align: right;
+}
+
+.message li {
+  padding: 0.75rem 1rem;
+  border: 1px solid #CDDDCD;
+}
+
+.message img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0px;
+  margin-right: 0.5rem;
+}
+
+.message p {
+  font-size: 14px;
+}
+
+.message strong {
+  color: #2A8356;
+  background-color: #EDF4EE;
+}
+
+.message .file {
+  background-color: #EDF4EE;
+  width: 200px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #CDDDCD;
+  border-radius: 2px;
+}
+
+.message input[type=textarea] {
+  width: 100%;
+  height: 12.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.message .btn {
+  font-size: 1rem;
+  width: 7rem;
+  height: 2.2rem;
+  border-radius: 2px;
+  margin-left: 0.5rem;
+  background-color: #2A8356;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+
+.message .btn:hover {
+  color: #2A8356;
+  background-color: #fff;
+  border: 1px solid #2A8356;
+}
+
+.editor {
+  padding-left: 1.5rem;
+}
+
+.editor li {
+  border: none;
+  padding: 0px 0px;
+  margin-right: 1.5rem;
 }
 /*# sourceMappingURL=all.css.map */

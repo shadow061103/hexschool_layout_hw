@@ -47,4 +47,9 @@
       -ms-flex-align: end;
           align-items: flex-end;
 }
+
+.justify-spa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=flex.css.map */

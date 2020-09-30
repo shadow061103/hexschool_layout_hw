@@ -7,15 +7,12 @@ header {
   font-weight: bold;
 }
 
-.nav img {
-  width: 1.5rem;
-  height: 1.5rem;
-  display: inline;
-  margin-right: 1rem;
-}
-
 .nav li {
   margin-bottom: 1.8rem;
+}
+
+.nav .material-icons {
+  margin-right: 1rem;
 }
 
 .active {
