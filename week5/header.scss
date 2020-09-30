@@ -1,0 +1,48 @@
+@import "variables";
+
+header
+{
+    background-color:$theme-color;
+    min-width: 296px;
+    min-height: 100vh;
+    padding-left: 2rem;
+    color:#121212;
+    font-weight: bold;
+
+}
+.nav{
+    li{
+        margin-bottom: 1.8rem;
+    }
+    .material-icons
+    {
+        margin-right: 1rem;
+    }
+}
+.active{
+    color: #2A8356;
+    position: relative;
+}
+.active::before
+{
+    content: "";
+    width: 4px;
+    height: 100%;
+    background: #2A8356  ;
+    position: absolute;
+    left: -32px;
+}
+.user{
+  
+    margin-bottom: 2rem;
+    img{
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+    }
+    .mail{
+        color: gray;
+    }
+
+}
